@@ -23,6 +23,9 @@ class Logger:
 
     def err(self, message='', file=stderr, end='\n'):
         print(f'[-] {message}', file=file, end=end)
+    
+    def debug(self, message='', file=stdout, end='\n'):
+        print(f'[DEBUG] {message}', file=file, end=end)
 
 
 console = Logger()

@@ -21,9 +21,8 @@ class SocketManager:
                 data = f.read(self.CHUNK)
         return True
     
-    def recv(self):
+    def recv(self, file:Path):
         filesize = int(self.socket_connection.recv(32).decode().split('\n', 1)[0])
-        file = Path(f'archivo_nuevo_{random.randint(1000, 9999)}.txt')
         file.touch()
         progress = 0
 
