@@ -1,0 +1,2 @@
+class ShareLiError(Exception):
+    pass
