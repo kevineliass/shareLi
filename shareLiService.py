@@ -4,7 +4,7 @@ from shareLiError import ShareLiError
 from socketManager import SocketManager
 from pathlib import Path
 
-HOST = 'localhost'
+HOST = '0.0.0.0'
 PORT = 15022
 HOSTNAME = 'eliaspc'
 
